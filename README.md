@@ -2,6 +2,7 @@
 
 Babel transform plugin for replacing \*.scss imports with static variable
 declaration as css string.
+
 This fork uses `sass` and overall is a more modern version of the original plugin.
 
 ## Example
@@ -35,7 +36,7 @@ Add it to your babel configuration:
 }
 ```
 
-Or with custom [`sass` options](https://github.com/sass/node-sass#options):
+Or with custom [`sass` options](https://sass-lang.com/documentation/js-api/interfaces/options/):
 
 ```json
 {
@@ -50,17 +51,21 @@ Or with custom [`sass` options](https://github.com/sass/node-sass#options):
 
 Import \*.scss files:
 
-````scss
+```scss
 // foo.scss
 $bar: 42px;
 .foo {
   font-size: $bar;
 }
-``` ```js
+```
+
+```js
 // foo.js
 import foo from "./foo.scss";
 console.log(foo); // -> .foo { font-size: 42px; }
-````
+```
+
+```
 
 ## Requirements
 
@@ -73,3 +78,4 @@ console.log(foo); // -> .foo { font-size: 42px; }
   transform would take first place in build process.
 - Every import transpiled with sass as an independent file, so you have to
   explicitly import dependencies if you used to have common context before.
+```
