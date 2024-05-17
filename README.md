@@ -3,7 +3,7 @@
 Babel transform plugin for replacing \*.scss imports with static variable
 declaration as css string.
 
-This fork uses `sass` and overall is a more modern version of the original plugin.
+This fork uses `sass` and is overall a more modern version of the original plugin.
 
 ## Example
 
