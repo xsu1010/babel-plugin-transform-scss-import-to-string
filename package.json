@@ -2,7 +2,9 @@
   "name": "@xsu1010/babel-plugin-transform-scss-import-to-string",
   "type": "module",
   "version": "0.0.0",
-  "repository": "https://github.com/xsu1010/babel-plugin-transform-scss-import-to-string",
+  "repository": {
+    "url": "https://github.com/xsu1010/babel-plugin-transform-scss-import-to-string"
+  },
   "description": "Babel plugin for transforming SCSS imports to static variable declarations with transpiled CSS string. Modernized.",
   "main": "dist/index.js",
   "files": [
