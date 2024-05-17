@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/xsu1010/babel-plugin-transform-scss-import-to-string/compare/v1.0.0...v1.0.1) (2024-05-17)
+
+
+### Bug Fixes
+
+* bump package version ([120aa46](https://github.com/xsu1010/babel-plugin-transform-scss-import-to-string/commit/120aa468d540b43a12bedb7ff7f2ad662f1b8799))
+
 # 1.0.0 (2024-05-17)
 
 
