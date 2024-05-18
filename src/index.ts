@@ -30,15 +30,13 @@ function transformScssToString(babel: Babel): {
     name: "babel-plugin-transform-scss-import-to-string",
     visitor: {
       ImportDeclaration(path, state) {
-        // Drop these options
         const userOptions = state.opts;
         // Filter *.scss imports
-        if (!/\.scss$/.test(path.node.source.value)) return;
-        // Get full path to file and transpile it
+        if (!/\.scss(\?inline)?$/.test(path.node.source.value)) return;
         const scssFileDirectory = resolve(dirname(state.file.opts.filename));
         const fullScssFilePath = join(
           scssFileDirectory,
-          path.node.source.value,
+          path.node.source.value.replace(/\?inline$/, ""),
         );
         const projectRoot = process.cwd();
         const nodeModulesPath = join(projectRoot, "node_modules");

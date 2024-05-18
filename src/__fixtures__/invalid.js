@@ -1,3 +1,3 @@
-import { foo } from './sample.scss';
+import { foo } from "./sample.scss";
 
 console.log(foo);

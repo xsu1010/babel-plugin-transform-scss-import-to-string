@@ -2,16 +2,18 @@
 
 exports[`babel-plugin-transform-scss-import-to-string > resolves and transpiles scss file 1`] = `
 "const sideEffectStyles = ".foo {\\n  color: cyan;\\n}\\n\\n.bar {\\n  font-size: 32px;\\n}";
-if (typeof sideEffectStyles === 'string') {
-  const style = document.createElement('style');
+if (typeof sideEffectStyles === "string") {
+  const style = document.createElement("style");
   style.styleSheet.cssText = sideEffectStyles;
   document.head.appendChild(style);
 }"
 `;
 
 exports[`babel-plugin-transform-scss-import-to-string > skips non-default import specifier 1`] = `
-"import { foo } from './sample.scss';
+"import { foo } from "./sample.scss";
 console.log(foo);"
 `;
 
 exports[`babel-plugin-transform-scss-import-to-string > supports custom node-sass options 1`] = `"const precision = ".baz {\\n  transform: translateX(1.87654321px);\\n}";"`;
+
+exports[`babel-plugin-transform-scss-import-to-string > supports scss files with inline query 1`] = `"const sample = ".foo {\\n  color: cyan;\\n}\\n\\n.bar {\\n  font-size: 32px;\\n}";"`;
