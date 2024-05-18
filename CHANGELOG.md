@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/xsu1010/babel-plugin-transform-scss-import-to-string/compare/v1.0.1...v1.1.0) (2024-05-18)
+
+
+### Features
+
+* added support for inline queries ([#2](https://github.com/xsu1010/babel-plugin-transform-scss-import-to-string/issues/2)) ([6a1f78e](https://github.com/xsu1010/babel-plugin-transform-scss-import-to-string/commit/6a1f78e1983ef51b6b46ea591ca87a239a7ea57b))
+
 ## [1.0.1](https://github.com/xsu1010/babel-plugin-transform-scss-import-to-string/compare/v1.0.0...v1.0.1) (2024-05-17)
 
 
