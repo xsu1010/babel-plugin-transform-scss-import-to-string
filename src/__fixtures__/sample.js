@@ -1,7 +1,7 @@
-import sideEffectStyles from './sample.scss';
+import sideEffectStyles from "./sample.scss";
 
-if (typeof sideEffectStyles === 'string') {
-  const style = document.createElement('style');
+if (typeof sideEffectStyles === "string") {
+  const style = document.createElement("style");
   style.styleSheet.cssText = sideEffectStyles;
   document.head.appendChild(style);
 }

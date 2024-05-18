@@ -30,4 +30,8 @@ describe("babel-plugin-transform-scss-import-to-string", () => {
   test("supports nested scss files", () => {
     expect(() => transformFixture("nested.js")).not.toThrow();
   });
+
+  test("supports scss files with inline query", () => {
+    expect(transformFixture("inline.js")).toMatchSnapshot();
+  });
 });

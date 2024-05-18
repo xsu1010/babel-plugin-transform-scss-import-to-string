@@ -1,1 +1,1 @@
-import precision from './precision.scss';
+import precision from "./precision.scss";
