@@ -65,8 +65,6 @@ import foo from "./foo.scss";
 console.log(foo); // -> .foo { font-size: 42px; }
 ```
 
-```
-
 ## Requirements
 
 - `sass`, which you should install explicitly
@@ -78,4 +76,3 @@ console.log(foo); // -> .foo { font-size: 42px; }
   transform would take first place in build process.
 - Every import transpiled with sass as an independent file, so you have to
   explicitly import dependencies if you used to have common context before.
-```
