@@ -3,12 +3,14 @@
 Babel transform plugin for replacing \*.scss imports with static variable
 declaration as css string.
 
-This fork uses `sass` and is overall a more modern version of the original plugin.
+> This is a fork from the original plugin [@researchgate/babel-plugin-transform-scss-import-to-string](https://github.com/researchgate/babel-plugin-transform-scss-import-to-string), which seems to no longer be maintained.
+> 
+> This version uses `sass` and allows for a more modern usage (_e.g._ it uses `sass` options and also works with `?inline` imports).
 
 ## Example
 
 ```js
-import sideEffectStyles from "./styles.sass";
+import sideEffectStyles from "./styles.scss?inline";
 // vvv
 const sideEffectStyles = ".foo { color: red; }";
 ```
@@ -49,7 +51,7 @@ Or with custom [`sass` options](https://sass-lang.com/documentation/js-api/inter
 }
 ```
 
-Import \*.scss files:
+Import `*.scss` files:
 
 ```scss
 // foo.scss
@@ -61,7 +63,7 @@ $bar: 42px;
 
 ```js
 // foo.js
-import foo from "./foo.scss";
+import foo from "./foo.scss?inline";
 console.log(foo); // -> .foo { font-size: 42px; }
 ```
 
